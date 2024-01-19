@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Love ♥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-green: #aec964;
+            --text-input-field: #d6dacb;
+            --hospital-green: #B9F608;
+            --sm: 14px;
+            --md:16px;
+            --lg:18px;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding:  0 24px;
+            border-bottom:  1px solid var(--very-light-green);
+        }
+        .menu{
+            display: none;
+            width: 50px;
+        }
+        .logo{
+            width: 80px;
+
+        }
+        .nav-left ul,
+        .nav-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .nav-left ul li a,
+        .nav-right ul li a{
+            text-decoration: none;
+            color: var(--very-light-green);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+            font-size: var(--md);
+        }
+        .nav-left ul li a:hover,
+        .nav-right ul li a:hover{
+            background-color: var(--hospital-green);
+            color: var(--dark);
+            border: 1px solid var(--hospital-green);
+        }
+        .nav-left{
+            display: flex;
+            
+            
+        }
+        .nav-left ul{
+            margin-left: 10px;
+        }
+        .nav-right img{
+            width: 50Px;
+            padding: 20px;
+        }
+        .email{
+            color: var(--very-light-green);
+            font-size: var(--sm);
+        }
+        
+        @media(max-width:640px){
+            .menu{
+                display: block;
+            }
+            .nav-left ul{
+               display: none; 
+            }
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/assets/menu.svg" alt="menu" class="menu">
+        <div class="nav-left">
+            <img src="/assets/logo.svg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Machos</a>
+                </li>
+                <li>
+                    <a href="">Hembras</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+           <ul>
+            <li class="email">user@gmai.com</li>
+                <li>
+                    <img src="/assets/adoption.svg" alt="">
+                </li>
+                <li>
+                    <img src="/assets/donate.svg" alt="">
+                </li>
+           </ul>
+
+        </div>
+    </nav>
+    
+    
+</body>
+</html>
